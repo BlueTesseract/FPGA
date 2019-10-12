@@ -13,9 +13,9 @@ endprimitive
 
 module mux(output o, input a1, a2, a, b, c, d);
 	assign o =	(a1 == 0 && a2 == 0) ? a :
-				(a1 == 1 && a2 == 0) ? b :
-				(a1 == 0 && a2 == 1) ? c :
-				(a1 == 1 && a2 == 1) ? d : 0;
+			(a1 == 1 && a2 == 0) ? b :
+			(a1 == 0 && a2 == 1) ? c :
+			(a1 == 1 && a2 == 1) ? d : 0;
 endmodule
 
 module jk(output o, input clk, j, k);
